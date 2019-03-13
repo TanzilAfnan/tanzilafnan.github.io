@@ -1,0 +1,173 @@
+﻿/**
+ *    @copyright Agdoom
+ */
+
+.cbp-spmenu {
+	background: rgba(255, 255, 255,.5);
+	position: fixed;
+    /*border-right: 1px solid #258ecd;*/
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 400;
+    transition: all .3s linear 0s;
+    -webkit-transition: all .3s linear 0s;
+}
+
+/*.cbp-spmenu a:hover {
+	background: #258ecd;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+}
+*/
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 90px;
+	/*height: 100%;*/
+	top: 0;
+	z-index: 10;
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-top: 150px;
+    background:#abcb5d;
+    box-shadow: 0px 4px 4px 0px rgba(189,189,189,1);
+
+}
+.cbp-spmenu-vertical a 
+{
+    /*border-right: 1px solid #258ecd;*/
+    /*border-right: 1px solid red;*/
+    /*border-bottom: 1px solid #258ecd;*/
+    padding: 10px 0px 10px 10px;
+
+}
+.cbp-spmenu-vertical a img
+{
+    /*height:50px;*/
+    /*width:50px;*/
+}
+.cbp-spmenu .gap
+{
+    height:90px;
+}
+
+/*.cbp-spmenu .gap:hover
+{
+    background-color:Transparent;   
+    cursor:default;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    
+}*/
+
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: 0px;
+}
+
+.cbp-spmenu-right {
+	right: 0px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: -100px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: -100px;
+}
+
+
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 100px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -100px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+/*.fixedfooter
+{
+    bottom:0px;
+    margin-bottom:0px;
+    position:fixed;
+    width:110px;
+}
+*/
+
+/*.footerfixer{
+    background-color:none;
+    
+    
+}
+*/
+
+@media screen and (max-height: 820px){
+    #m7{
+        background-color:none;
+        visibility:hidden;
+    }
+    
+    .footerfixer{
+        background-color:none;
+        padding-top:-200px;
+    }
+    
+    #m8{
+        
+        visibility:hidden;
+    }
+    
+}
+
+@media screen and (min-height: 821px){
+    #m7{
+        background-color:none;
+        visibility:hidden;
+    }
+    
+    .footerfixer{
+        background-color:none;
+        padding-top:-200px;
+    }
+    
+    #m8{
+        
+        visibility:hidden;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .cbp-spmenu{
+        visibility:hidden;
+    }
+}

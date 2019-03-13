@@ -1,0 +1,106 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+/***************
+****Top Menu***
+****************/
+.topmenudecor 
+{
+    padding-top: 10px;
+    padding-bottom:10px;
+    overflow: hidden;   
+}
+.topmenudecor:hover 
+{
+    background-color: #337ab7;
+    color:white;
+}
+
+.topmenudecor:hover .fontdecor
+{
+    color:white;
+}
+
+
+.fontdecor
+{
+    color:black;
+    font-size:18px;
+}
+
+.menu {
+  background: silver;
+  opacity: 0.8;  
+  display: none;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+}
+.menu ul {
+  font-family: 'Ubuntu', sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu ul li {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 8px 0;
+  text-transform: uppercase;
+}
+
+.menu ul li:hover { background: #16a085; }
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-toggle {
+  background: none;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 25px;
+}
+
+.menu-toggle a {
+  text-decoration: none;
+  color: #333;
+}
+
+.about {
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  margin-top: 100px;
+  text-align: center;
+  color: #333;
+}
+
+.display-Toggle { 
+    display: none;
+    float: right;
+    padding-right: 15px;
+}
+
+.display-Toggle i:hover {
+    animation: pulse 2s;
+}
+/*@media screen and (min-width: 0px) and (max-width: 400px) {
+  .display-Toggle { display: block; } 
+}*/
+
+@media screen and (max-width: 910px) {
+    
+    .display-Toggle{ display: block; }
+    
+
+}
+@media screen and (max-height: 400px) {
+    
+    .display-Toggle{ display: block; }
+    
+
+}
